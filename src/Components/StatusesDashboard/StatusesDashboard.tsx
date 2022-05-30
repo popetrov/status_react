@@ -6,7 +6,6 @@ import { StatusesDashboardForm } from './Form/StatusesDashboardForm'
 import { Status } from '../Status/Status.types'
 import { Status as StatusView } from '../Status/Status'
 import { Geolocation } from '../Geolocation/Geolocation'
-import { Vibration } from '../Vibration/Vibration'
 
 export const StatusesDashboard: FC = () => {
     const[statuses, setStatuses] = useState(INITIAL_STATUSES)
@@ -26,7 +25,6 @@ export const StatusesDashboard: FC = () => {
             ))}
             <StatusesDashboardForm onSubmit={formSubmitHandle}/>
             <Geolocation/>
-            <Vibration/>
         </div>
     )
 }
