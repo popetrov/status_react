@@ -31,7 +31,7 @@ export const Status: FC<StatusProps> = ({ status, onDelete }) => {
                 className="StatusesDashboard-Status"
             >
                 {chosenEmoji ? (
-                    <span onClick={emojiViewHandler}>Ваша эмоция{chosenEmoji.emoji}</span>
+                    <span onClick={emojiViewHandler}>Emoshion{chosenEmoji.emoji}</span>
                 ) : (
                     <span className='StatusesDashboard-EmojiView' onClick={emojiViewHandler}>выберети эмоцию 😂</span>
                 )}
